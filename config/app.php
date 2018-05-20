@@ -14,7 +14,7 @@ return [
     */
 
     // 'name' => env('APP_NAME', 'Laravel'),
-    'name' => 'KRS ONLINE UMM',
+    'name' => 'KRS ONLINE',
 
     /*
     |--------------------------------------------------------------------------
