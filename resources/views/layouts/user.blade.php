@@ -333,25 +333,24 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li>
-          <a href="/admin/dosen">
-            <i class="fa fa-files-o"></i></i> <span>Data Dosen</span>
+          <a href="/user/matkul">
+            <i class="fa fa-files-o"></i></i> <span>Mata Kuliah</span>
             </span>
           </a>
         <li >
-          <a href="/admin/mahasiswa">
+          <a href="/user/kurikulum">
             <i class="fa fa-files-o"></i>
-            <span>Data Mahasiswa</span>
+            <span>Kurikulum</span>
           </a>
         </li>
         <li>
-          <a href="pages/widgets.html">
-            <i class="fa fa-files-o"></i> <span>Data Matkul</span>
+          <a href="/user/khs">
+            <i class="fa fa-files-o"></i> <span>Info KHS</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>Kurikulum</span>
+        <li>
+          <a href="/user/keuangan">
+            <i class="fa fa-files-o"></i> <span>Keuangan</span>
           </a>
         </li>
     </section>
