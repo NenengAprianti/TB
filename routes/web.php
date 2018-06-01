@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/dosen', 'dosenController@index');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
+Route::get('/user', 'UserController@index');
