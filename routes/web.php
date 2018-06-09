@@ -21,11 +21,12 @@ Route::get('/', 'LoginController@index');
 
 Route::get('/home', 'HomeController@index');
 
-Route::prefix('admin')->group (function() {
-    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-    Route::get('/', 'AdminController@index')->name('admin.dashboarad');
-  });
+// Route::prefix('admin')->group(function() {
+// Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+// Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+// Route::get('/', 'AdminController@index')->name('admin.dashboarad');
+// });
+
 
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/dosen', 'dosenController@index');
