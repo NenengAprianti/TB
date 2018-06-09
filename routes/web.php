@@ -21,6 +21,14 @@ Route::get('/', 'LoginController@index');
 
 Route::get('/home', 'HomeController@index');
 
+
+Route::prefix('admin')->group(function () {
+Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+Route::get('/', 'AdminController@index')->name('admin.dashboard');
+});
+
+
 // Route::prefix('admin')->group(function() {
 // Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 // Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
@@ -28,7 +36,7 @@ Route::get('/home', 'HomeController@index');
 // });
 
 
-Route::get('/admin', 'AdminController@index');
+
 Route::get('/admin/dosen', 'dosenController@index');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
 Route::get('/user', 'UserController@index');
