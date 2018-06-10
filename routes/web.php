@@ -20,22 +20,16 @@ Auth::routes();
 Route::get('/', 'LoginController@index');
 
 Route::get('/home', 'HomeController@index');
+Route::get('/user/logut', 'Auth\LoginController@userLogout')->name('user.logout');
+
 
 
 Route::prefix('admin')->group(function () {
 Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 Route::get('/', 'AdminController@index')->name('admin.dashboard');
+Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 });
-
-
-// Route::prefix('admin')->group(function() {
-// Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
-// Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
-// Route::get('/', 'AdminController@index')->name('admin.dashboarad');
-// });
-
-
 
 Route::get('/admin/dosen', 'dosenController@index');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
@@ -44,3 +38,10 @@ Route::get('/user/matkul', 'MatkulController@index');
 Route::get('/user/kurikulum', 'KurikulumController@index');
 Route::get('/user/khs', 'KhsController@index');
 Route::get('/user/keuangan', 'KeuanganController@index');
+
+// Route::prefix('admin')->group(function() {
+// Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+// Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+// Route::get('/', 'AdminController@index')->name('admin.dashboarad');
+// });
+
