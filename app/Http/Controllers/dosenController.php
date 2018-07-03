@@ -23,7 +23,7 @@ class dosenController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambahdosen');
     }
 
     /**

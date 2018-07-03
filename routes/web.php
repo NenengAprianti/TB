@@ -38,6 +38,7 @@ Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 });
 
 Route::get('/admin/dosen', 'dosenController@index');
+Route::get('/admin/tambahdosen', 'dosenController@create');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
 Route::get('/admin/matkul', 'MatkulController@index');
 Route::get('/user', 'UserController@index');
