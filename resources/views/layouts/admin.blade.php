@@ -344,7 +344,7 @@
           </a>
         </li>
         <li>
-          <a href="pages/widgets.html">
+          <a href="matkul">
             <i class="fa fa-files-o"></i> <span>Data Matkul</span>
           </a>
         </li>

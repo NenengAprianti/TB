@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.admin')
 
 @section('content')
 <a class="btn btn-primary" href="#" role="button">Tambah</a>
@@ -14,8 +14,8 @@ allalla
   <thead>
     <tr>
       <th scope="col">No</th>
-      <th scope="col">NIM</th>
-      <th scope="col">Nama Mahasiswa</th>
+      <th scope="col">Kode Matkul</th>
+      <th scope="col">Nama Matkul</th>
       <th scope="col">Prodi</th>
       <th scope="col">Option</th>
     </tr>
@@ -24,15 +24,15 @@ allalla
     <tr>
       <th scope="row">1</th>
       <td>123</td>
-      <td>Sofyan</td>
+      <td>Kalkulus</td>
       <td>Teknik Informatika</td>
-      <td></td>
+      <td><button type="button" class="btn btn-primary">Edit</button> <button type="button" class="btn btn-success">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td>124</td>
+      <td>Topologi</td>
+      <td>Teknik Informatika</td>
     </tr>
 </tbody>
 </table>

@@ -39,8 +39,8 @@ Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 
 Route::get('/admin/dosen', 'dosenController@index');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
+Route::get('/admin/matkul', 'MatkulController@index');
 Route::get('/user', 'UserController@index');
-Route::get('/user/matkul', 'MatkulController@index');
 Route::get('/user/kurikulum', 'KurikulumController@index');
 Route::get('/user/khs', 'KhsController@index');
 Route::get('/user/keuangan', 'KeuanganController@index');

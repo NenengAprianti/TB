@@ -26,7 +26,7 @@ allalla
       <td>123</td>
       <td>Sofyan</td>
       <td>Teknik Informatik</td>
-      <td></td>
+      <td><button type="button" class="btn btn-primary">Edit</button> <button type="button" class="btn btn-success">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
