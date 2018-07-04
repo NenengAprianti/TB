@@ -24,7 +24,7 @@ class MahasiswaController extends Controller
      */
     public function create()
     {
-        return view('tambahmahasiswa');
+        //
     }
 
     /**
@@ -35,13 +35,7 @@ class MahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        $mahasiswa = $this->validate(request(), [
-        'NIM' => 'required',
-        'Nama Mahasiswa' => 'required',
-        'Prodi' => 'required'
-            ]);
-        mahasiswa::create($mahasiswa);
-        return back() ->with('success', 'Product has been added');
+        //
     }
 
     /**
