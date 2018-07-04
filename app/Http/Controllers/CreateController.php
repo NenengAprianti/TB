@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class dosenController extends Controller
+class CreateController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class dosenController extends Controller
      */
     public function index()
     {
-        return view('dosen');
+        //
     }
 
     /**
@@ -23,11 +23,7 @@ class dosenController extends Controller
      */
     public function create()
     {
-<<<<<<< HEAD
-        return view ('dosen.create');
-=======
-        return view('tambahdosen');
->>>>>>> 714435cf5c20cc1c96a81ef26dcab2a3e90f7c5c
+        //
     }
 
     /**

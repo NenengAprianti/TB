@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('dosen','dosenController');
 // Route::get('/', 'LoginController@index');
 
 Route::get('/home', 'HomeController@index');
@@ -40,6 +41,8 @@ Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
 Route::get('/admin/dosen', 'dosenController@index');
 Route::get('/admin/tambahdosen', 'dosenController@create');
 Route::get('/admin/mahasiswa', 'MahasiswaController@index');
+Route::get('/admin/tambahmahasiswa', 'MahasiswaController@create');
+Route::get('/admin/storemahasiswa', 'MahasiswaController@store');
 Route::get('/admin/matkul', 'MatkulController@index');
 Route::get('/user', 'UserController@index');
 Route::get('/user/kurikulum', 'KurikulumController@index');
