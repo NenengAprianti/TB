@@ -23,7 +23,11 @@ class dosenController extends Controller
      */
     public function create()
     {
+<<<<<<< HEAD
         return view ('dosen.create');
+=======
+        return view('tambahdosen');
+>>>>>>> 714435cf5c20cc1c96a81ef26dcab2a3e90f7c5c
     }
 
     /**
