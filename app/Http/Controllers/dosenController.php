@@ -16,18 +16,14 @@ class dosenController extends Controller
         return view('dosen');
     }
 
-    /**
+        /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-<<<<<<< HEAD
-        return view ('dosen.create');
-=======
         return view('tambahdosen');
->>>>>>> 714435cf5c20cc1c96a81ef26dcab2a3e90f7c5c
     }
 
     /**
@@ -75,12 +71,6 @@ class dosenController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         //
